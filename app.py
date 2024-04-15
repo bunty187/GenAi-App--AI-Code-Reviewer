@@ -5,7 +5,6 @@ f = open("keys/.open_api_key.txt")
 key = f.read()
 client = OpenAI(api_key=key)
 
-
 st.snow()
 st.title("💬An AI Code Reviewer")
 
@@ -26,8 +25,3 @@ if st.button("Check") == True:
     )
     ## print the response on the web page
     st.write(response.choices[0].message.content)
-
-
-# streamlit run app.py
-
-# emoji window + .
