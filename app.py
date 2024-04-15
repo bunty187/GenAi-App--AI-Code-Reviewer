@@ -1,7 +1,7 @@
 from openai import OpenAI
 import streamlit as st
 
-f = open("keys/.open_api_key.txt")
+f = open("keys/.openai_api_key.txt")
 key = f.read()
 client = OpenAI(api_key=key)
 
